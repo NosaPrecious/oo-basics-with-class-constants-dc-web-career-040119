@@ -11,12 +11,6 @@ class Shoe
   
   def brand=(brand_name)
     @brand= brand_name
-    if BRANDS.include?(brand_name)
-    BRANDS << brand
-    BRANDS.uniq!
-  else
-    BRANDS << brand
-    end
   end
 
   def cobble
