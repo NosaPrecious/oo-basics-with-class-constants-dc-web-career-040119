@@ -10,7 +10,7 @@ class Shoe
   
   def brand=(brand_name)
     @brand= brand_name
-    if BRANDS.include?(brand)
+    if BRANDS.include?(brand) && brand == brand_name
     BRANDS << brand
     BRANDS.uniq!
   else
