@@ -6,7 +6,7 @@ class Shoe
   BRANDS = []
   def initialize(brand)
     @brand = brand
-    BRANDS << self 
+    BRANDS << brand 
     BRANDS.each{ |shoe_brand|
     BRANDS.include?(shoe_brand)
     }
