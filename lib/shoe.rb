@@ -7,10 +7,11 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << self 
+      binding.pry
   end
   
   def brand=(brand_name)
-    binding.pry
+  
     @brand= brand_name
   end
 
