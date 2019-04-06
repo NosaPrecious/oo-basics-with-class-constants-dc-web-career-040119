@@ -13,7 +13,6 @@ class Shoe
     if BRANDS.include?(brand_name)
     BRANDS << brand
     BRANDS.uniq!
-    binding.pry
   else
     BRANDS << brand
     end
