@@ -14,7 +14,7 @@ class Shoe
     BRANDS << brand
     BRANDS.uniq!
   else
-    BRANDS<< brand
+    BRANDS << brand
     end
   end
 
