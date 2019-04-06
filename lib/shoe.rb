@@ -10,12 +10,12 @@ class Shoe
   
   def brand=(brand_name)
     @brand= brand_name
-    BRANDS.any?{
-      |brand_type|
-    brand_type
-    }
+    if BRANDS.include?(brand)
     BRANDS << brand
-    
+    BRANDS.uniq!
+  else
+    BRANDS<< brand
+    end
   end
 
   def cobble
