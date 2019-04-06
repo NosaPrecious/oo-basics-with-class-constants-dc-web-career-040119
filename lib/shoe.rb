@@ -6,6 +6,7 @@ class Shoe
   BRANDS = []
   def initialize(brand)
     @brand = brand
+    BRANDS << self 
   end
   
   def brand=(brand_name)
