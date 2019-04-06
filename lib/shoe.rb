@@ -10,6 +10,7 @@ class Shoe
     BRANDS.each{ |shoe_brand|
     BRANDS.include?(shoe_brand)
     }
+    BRANDS.uniq!
   end
   
   def brand=(brand_name)
