@@ -7,7 +7,7 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << self 
-      binding.pry
+    BRANDS.include?(brand)
   end
   
   def brand=(brand_name)
